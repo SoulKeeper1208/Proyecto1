@@ -2,3 +2,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Tipografía moderna */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Sombras suaves para secciones y botones */
+section, .shadow-lg {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+/* Hover en inputs y textarea */
+input:focus, textarea:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+    border-color: #3b82f6;
+    outline: none;
+}
+
+/* Botones con transición más suave */
+button {
+    transition: all 0.3s ease;
+}
+
+/* Hero section con sombra y gradiente más profesional */
+#inicio {
+    background: linear-gradient(135deg, #60a5fa 0%, #93c5fd 100%);
+    color: white;
+}
+
+/* Footer más limpio y elegante */
+footer {
+    background-color: #f3f4f6;
+    color: #374151;
+    font-size: 0.9rem;
+}

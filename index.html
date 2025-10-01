@@ -116,5 +116,34 @@
         <p>© 2025 MusicStore. Todos los derechos reservados.</p>
     </footer>
 
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section");
+    const menuLinks = document.querySelectorAll(".menu-link");
+    const header = document.querySelector("header"); // Obtener altura real del header
+
+    window.addEventListener("scroll", () => {
+        let current = "";
+        const scrollPos = window.pageYOffset;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - header.offsetHeight - 10; // offset dinámico
+            if (scrollPos >= sectionTop) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        menuLinks.forEach(link => {
+            link.classList.remove("text-blue-600", "font-bold");
+            if (link.getAttribute("href") === "#" + current) {
+                link.classList.add("text-blue-600", "font-bold");
+            }
+        });
+    });
+    });
+    </script>
+
+
+
 </body>
 </html>
