@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,66 +6,114 @@
     <title>Instrumentos Musicales</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tu CSS personalizado -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Header / Navbar -->
-    <header class="bg-white shadow-md">
+    <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center p-4">
-            <h1 class="text-2xl font-bold">Tienda de Instrumentos</h1>
+            <h1 class="text-2xl font-bold text-blue-700">🎵 MusicStore</h1>
             <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#inicio" class="hover:text-blue-600">Inicio</a></li>
-                    <li><a href="#productos" class="hover:text-blue-600">Productos</a></li>
-                    <li><a href="#contacto" class="hover:text-blue-600">Contacto</a></li>
+                <ul class="flex space-x-6 font-medium text-gray-700">
+                    <li><a href="#inicio" class="hover:text-blue-600 hover:underline transition">Inicio</a></li>
+                    <li><a href="#productos" class="hover:text-blue-600 hover:underline transition">Productos</a></li>
+                    <li><a href="#suscripcion" class="hover:text-blue-600 hover:underline transition">Suscríbete</a></li>
+                    <li><a href="#contacto" class="hover:text-blue-600 hover:underline transition">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="inicio" class="bg-blue-100 py-20 text-center">
-        <h2 class="text-4xl font-bold mb-4">Bienvenido a nuestra tienda de instrumentos</h2>
-        <p class="text-lg max-w-xl mx-auto">Encuentra guitarras, pianos, baterías y más para todos los niveles.</p>
+    <section id="inicio" class="bg-gradient-to-r from-blue-200 via-blue-100 to-white py-28 text-center">
+        <h2 class="text-5xl font-extrabold mb-4 text-blue-800">Bienvenido a MusicStore</h2>
+        <p class="text-xl max-w-2xl mx-auto mb-8">Encuentra guitarras, pianos, baterías y más para todos los niveles. La música te espera.</p>
+        <a href="#productos" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition">Ver Productos</a>
     </section>
 
     <!-- Productos -->
     <section id="productos" class="py-20 container mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-8">Nuestros Productos</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Producto ejemplo -->
-            <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="assets/images/guitarra.jpg" alt="Guitarra" class="rounded-md mb-4">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Nuestros Productos</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+            <!-- Producto 1 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 hover:shadow-2xl transition">
+                <img src="https://cdn.pixabay.com/photo/2014/12/21/23/52/guitar-575272_1280.jpg" alt="Guitarra" class="rounded-md mb-4">
                 <h3 class="text-xl font-semibold">Guitarra Acústica</h3>
-                <p class="mt-2">Ideal para principiantes y profesionales.</p>
+                <p class="mt-2 text-gray-600">Ideal para principiantes y profesionales.</p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Comprar</button>
             </div>
-            <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="assets/images/piano.jpg" alt="Piano" class="rounded-md mb-4">
+
+            <!-- Producto 2 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 hover:shadow-2xl transition">
+                <img src="https://cdn.pixabay.com/photo/2016/04/25/19/28/piano-1357430_1280.jpg" alt="Piano" class="rounded-md mb-4">
                 <h3 class="text-xl font-semibold">Piano Digital</h3>
-                <p class="mt-2">Con sonidos realistas y teclado sensible al tacto.</p>
+                <p class="mt-2 text-gray-600">Con sonidos realistas y teclado sensible al tacto.</p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Comprar</button>
             </div>
-            <div class="bg-white rounded-lg shadow-md p-4">
-                <img src="assets/images/bateria.jpg" alt="Batería" class="rounded-md mb-4">
+
+            <!-- Producto 3 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 hover:shadow-2xl transition">
+                <img src="https://cdn.pixabay.com/photo/2015/01/23/11/46/drum-kit-606063_1280.jpg" alt="Batería" class="rounded-md mb-4">
                 <h3 class="text-xl font-semibold">Batería Completa</h3>
-                <p class="mt-2">Para músicos que buscan calidad y resistencia.</p>
+                <p class="mt-2 text-gray-600">Para músicos que buscan calidad y resistencia.</p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Comprar</button>
             </div>
+
+            <!-- Producto 4 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 hover:shadow-2xl transition">
+                <img src="https://cdn.pixabay.com/photo/2016/12/16/12/57/violin-1916786_1280.jpg" alt="Violín" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold">Violín Clásico</h3>
+                <p class="mt-2 text-gray-600">Perfecto para estudiantes y músicos experimentados.</p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Comprar</button>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 hover:shadow-2xl transition">
+                <img src="https://cdn.pixabay.com/photo/2014/10/22/17/53/saxophone-498080_1280.jpg" alt="Saxofón" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold">Saxofón</h3>
+                <p class="mt-2 text-gray-600">Ideal para jazz y música contemporánea.</p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Comprar</button>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="bg-white rounded-lg shadow-lg p-4 hover:shadow-2xl transition">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/05/09/microphone-1867062_1280.jpg" alt="Micrófono" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold">Micrófono Profesional</h3>
+                <p class="mt-2 text-gray-600">Para grabaciones de estudio y presentaciones en vivo.</p>
+                <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Comprar</button>
+            </div>
+
         </div>
+    </section>
+
+    <!-- Suscripción -->
+    <section id="suscripcion" class="bg-blue-100 py-20 text-center">
+        <h2 class="text-3xl font-bold mb-4 text-blue-800">Suscríbete a nuestro boletín</h2>
+        <p class="mb-6 text-gray-700">Recibe novedades y descuentos exclusivos.</p>
+        <form class="max-w-xl mx-auto flex flex-col sm:flex-row gap-4 justify-center">
+            <input type="email" placeholder="Tu correo electrónico" class="p-3 rounded border border-gray-300 flex-1 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Suscribirse</button>
+        </form>
     </section>
 
     <!-- Contacto -->
     <section id="contacto" class="bg-gray-100 py-20 text-center">
         <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
-        <p class="mb-4">Para más información sobre nuestros productos, envíanos un mensaje.</p>
-        <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Enviar mensaje</a>
+        <p class="mb-6">Para más información sobre nuestros productos, envíanos un mensaje.</p>
+        <form class="max-w-xl mx-auto flex flex-col gap-4">
+            <input type="text" placeholder="Nombre" class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <input type="email" placeholder="Correo electrónico" class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <textarea placeholder="Mensaje" class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Enviar mensaje</button>
+        </form>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white shadow-md py-4 text-center">
-        <p>© 2025 Tienda de Instrumentos. Todos los derechos reservados.</p>
+    <footer class="bg-white shadow-md py-6 text-center">
+        <p>© 2025 MusicStore. Todos los derechos reservados.</p>
     </footer>
 
 </body>
-
 </html>
