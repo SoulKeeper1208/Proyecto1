@@ -1,0 +1,72 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrumentos Musicales</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold">Tienda de Instrumentos</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#inicio" class="hover:text-blue-600">Inicio</a></li>
+                    <li><a href="#productos" class="hover:text-blue-600">Productos</a></li>
+                    <li><a href="#contacto" class="hover:text-blue-600">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="bg-blue-100 py-20 text-center">
+        <h2 class="text-4xl font-bold mb-4">Bienvenido a nuestra tienda de instrumentos</h2>
+        <p class="text-lg max-w-xl mx-auto">Encuentra guitarras, pianos, baterías y más para todos los niveles.</p>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="py-20 container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Nuestros Productos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Producto ejemplo -->
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="assets/images/guitarra.jpg" alt="Guitarra" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold">Guitarra Acústica</h3>
+                <p class="mt-2">Ideal para principiantes y profesionales.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="assets/images/piano.jpg" alt="Piano" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold">Piano Digital</h3>
+                <p class="mt-2">Con sonidos realistas y teclado sensible al tacto.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-4">
+                <img src="assets/images/bateria.jpg" alt="Batería" class="rounded-md mb-4">
+                <h3 class="text-xl font-semibold">Batería Completa</h3>
+                <p class="mt-2">Para músicos que buscan calidad y resistencia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-gray-100 py-20 text-center">
+        <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
+        <p class="mb-4">Para más información sobre nuestros productos, envíanos un mensaje.</p>
+        <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Enviar mensaje</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-md py-4 text-center">
+        <p>© 2025 Tienda de Instrumentos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
